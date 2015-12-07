@@ -1,0 +1,30 @@
+{
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "A7FCB22E78DDAB167060F3405CD6078EE534FC79",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
+
+  },
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "A7FCB22E78DDAB167060F3405CD6078EE534FC79" : 0,
+    "58A41A43497141B2228C57F92B922F93C4C04E59" : 0
+  },
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "F6CD9D6D-6454-4E8A-A58D-BF79AF1A090A",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "A7FCB22E78DDAB167060F3405CD6078EE534FC79" : "PlayGround\/",
+    "58A41A43497141B2228C57F92B922F93C4C04E59" : ""
+  },
+  "DVTSourceControlWorkspaceBlueprintNameKey" : "MiniReto1",
+  "DVTSourceControlWorkspaceBlueprintVersion" : 204,
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "MiniReto1.playground",
+  "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/JohnLGitHub\/PlayGround.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "58A41A43497141B2228C57F92B922F93C4C04E59"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/JohnLGitHub\/PlayGround.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "A7FCB22E78DDAB167060F3405CD6078EE534FC79"
+    }
+  ]
+}
