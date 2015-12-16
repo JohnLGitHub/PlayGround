@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Bucket
+   type = "1"
+   version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Hamburguesas/ViewController.swift"
+            timestampString = "471841011.826788"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "16"
+            endingLineNumber = "16"
+            landmarkName = "ViewController"
+            landmarkType = "3">
+            <Locations>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Hamburguesas.ViewController.pais.setter : Hamburguesas.ColeccionDePaises"
+                  moduleName = "Hamburguesas"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/jlorenzo/Documents/Developer/Swift/PlayGround/PlayGround/Hamburguesas/Hamburguesas/ViewController.swift"
+                  timestampString = "471841012.861173"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "0"
+                  endingLineNumber = "0"
+                  offsetFromSymbolStart = "16">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Hamburguesas.ViewController.pais.materializeForSet : Hamburguesas.ColeccionDePaises"
+                  moduleName = "Hamburguesas"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/jlorenzo/Documents/Developer/Swift/PlayGround/PlayGround/Hamburguesas/Hamburguesas/ViewController.swift"
+                  timestampString = "471841012.861331"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "0"
+                  endingLineNumber = "0"
+                  offsetFromSymbolStart = "12">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Hamburguesas.ViewController.init (Hamburguesas.ViewController.Type)(nibName : Swift.Optional&lt;Swift.String&gt;, bundle : Swift.Optional&lt;__ObjC.NSBundle&gt;) -&gt; Hamburguesas.ViewController"
+                  moduleName = "Hamburguesas"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/jlorenzo/Documents/Developer/Swift/PlayGround/PlayGround/Hamburguesas/Hamburguesas/ViewController.swift"
+                  timestampString = "471841012.861436"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "17"
+                  endingLineNumber = "17"
+                  offsetFromSymbolStart = "197">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Hamburguesas.ViewController.init (Hamburguesas.ViewController.Type)(coder : __ObjC.NSCoder) -&gt; Swift.Optional&lt;Hamburguesas.ViewController&gt;"
+                  moduleName = "Hamburguesas"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/jlorenzo/Documents/Developer/Swift/PlayGround/PlayGround/Hamburguesas/Hamburguesas/ViewController.swift"
+                  timestampString = "471841012.861539"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "17"
+                  endingLineNumber = "17"
+                  offsetFromSymbolStart = "126">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
+</Bucket>
