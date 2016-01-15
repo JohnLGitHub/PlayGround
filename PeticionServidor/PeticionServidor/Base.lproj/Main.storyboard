@@ -56,7 +56,7 @@
                             <constraint firstItem="POf-O5-hBk" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="72" id="lzg-B3-cIM"/>
                         </constraints>
                         <connections>
-                            <action selector="backgroundTap:" destination="BYZ-38-t0r" eventType="touchDown" id="FYi-0F-C48"/>
+                            <action selector="backgroundTap:" destination="BYZ-38-t0r" eventType="touchDown" id="fIl-ew-sHM"/>
                         </connections>
                     </view>
                     <connections>

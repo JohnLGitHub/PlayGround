@@ -1,0 +1,563 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9531" systemVersion="15A279b" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="KZN-33-5QR">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="r1R-GK-pk3">
+            <objects>
+                <viewController id="vIE-2y-I9O" customClass="ViewController" customModule="PizzaApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="OqE-m4-Ba3"/>
+                        <viewControllerLayoutGuide type="bottom" id="Ess-e3-pbT"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="ZWi-Gp-QRM">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Seleccione el Tamaño de la pizza" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wI9-Nh-IYT">
+                                <rect key="frame" x="174.5" y="120" width="252.5" height="20.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <pickerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="x5f-Dv-BQ3">
+                                <rect key="frame" x="140" y="192" width="320" height="216"/>
+                            </pickerView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HBq-ra-UY6">
+                                <rect key="frame" x="209" y="449" width="183" height="30"/>
+                                <state key="normal" title="Seleccione el tipo de masa"/>
+                                <connections>
+                                    <action selector="tamanoSeleccionado:" destination="vIE-2y-I9O" eventType="touchUpInside" id="xZ3-tb-GlX"/>
+                                    <segue destination="HY2-ge-FMH" kind="show" id="hHA-LE-1hL"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="Ess-e3-pbT" firstAttribute="top" secondItem="HBq-ra-UY6" secondAttribute="bottom" constant="121" id="08V-Tm-doS"/>
+                            <constraint firstItem="HBq-ra-UY6" firstAttribute="centerX" secondItem="ZWi-Gp-QRM" secondAttribute="centerX" id="1pv-QS-NMs"/>
+                            <constraint firstItem="wI9-Nh-IYT" firstAttribute="centerX" secondItem="ZWi-Gp-QRM" secondAttribute="centerX" id="7ha-tv-Bzq"/>
+                            <constraint firstItem="x5f-Dv-BQ3" firstAttribute="centerY" secondItem="ZWi-Gp-QRM" secondAttribute="centerY" id="JLS-Bz-z9r"/>
+                            <constraint firstItem="x5f-Dv-BQ3" firstAttribute="centerX" secondItem="ZWi-Gp-QRM" secondAttribute="centerX" id="S0g-FP-6tx"/>
+                            <constraint firstItem="wI9-Nh-IYT" firstAttribute="top" secondItem="OqE-m4-Ba3" secondAttribute="bottom" constant="56" id="U1U-D9-ALl"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="qxR-83-GQd"/>
+                    <connections>
+                        <outlet property="TamanoPizzPick" destination="x5f-Dv-BQ3" id="d84-Ml-fls"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="9Mb-ne-eVj" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1745" y="-72"/>
+        </scene>
+        <!--Tipo Masa View Controller-->
+        <scene sceneID="FeK-yi-3MI">
+            <objects>
+                <viewController id="HY2-ge-FMH" customClass="TipoMasaViewController" customModule="PizzaApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="v8T-md-gpE"/>
+                        <viewControllerLayoutGuide type="bottom" id="1wZ-zj-5JO"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="yey-Kl-VbW">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Seleccione el Tipo de Masa" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dbz-jT-xkn">
+                                <rect key="frame" x="196.5" y="120" width="208.5" height="20.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <pickerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="06S-FO-nVb">
+                                <rect key="frame" x="140" y="192" width="320" height="216"/>
+                            </pickerView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fb6-T1-Gjg">
+                                <rect key="frame" x="203" y="449" width="195" height="30"/>
+                                <state key="normal" title="Seleccione el Tipo de Queso"/>
+                                <connections>
+                                    <action selector="masaSeleccionada:" destination="HY2-ge-FMH" eventType="touchUpInside" id="nQ9-lf-qUQ"/>
+                                    <segue destination="Mcf-H2-0MF" kind="show" id="K4K-od-Vk0"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="06S-FO-nVb" firstAttribute="centerY" secondItem="yey-Kl-VbW" secondAttribute="centerY" id="6Xq-Mp-XtK"/>
+                            <constraint firstItem="dbz-jT-xkn" firstAttribute="top" secondItem="v8T-md-gpE" secondAttribute="bottom" constant="56" id="BQQ-GG-ap2"/>
+                            <constraint firstItem="06S-FO-nVb" firstAttribute="centerX" secondItem="yey-Kl-VbW" secondAttribute="centerX" id="Gwl-9M-Qfn"/>
+                            <constraint firstItem="fb6-T1-Gjg" firstAttribute="centerX" secondItem="yey-Kl-VbW" secondAttribute="centerX" id="UXc-Sl-EHu"/>
+                            <constraint firstItem="1wZ-zj-5JO" firstAttribute="top" secondItem="fb6-T1-Gjg" secondAttribute="bottom" constant="121" id="Vnb-ml-XiZ"/>
+                            <constraint firstItem="dbz-jT-xkn" firstAttribute="centerX" secondItem="yey-Kl-VbW" secondAttribute="centerX" id="bWK-pv-B5p"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="tipoMasaPicker" destination="06S-FO-nVb" id="VW6-y0-7Ex"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="K8S-of-e5t" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2487" y="-72"/>
+        </scene>
+        <!--Confirmar Orden View Controller-->
+        <scene sceneID="kvL-Ev-cBb">
+            <objects>
+                <viewController id="hrX-vP-urM" customClass="ConfirmarOrdenViewController" customModule="PizzaApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="6Nm-v3-Bcy"/>
+                        <viewControllerLayoutGuide type="bottom" id="okF-HN-OY6"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="ohc-0I-9cd">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillProportionally" alignment="top" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="LOq-1n-LK5">
+                                <rect key="frame" x="187" y="244" width="226" height="112"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="fMR-Uv-i7r">
+                                        <rect key="frame" x="0.0" y="0.0" width="117" height="21"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Tamaño :" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ySR-ti-y88">
+                                                <rect key="frame" x="0.0" y="0.0" width="75" height="21"/>
+                                                <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="98X-r2-lqe">
+                                                <rect key="frame" x="75" y="0.0" width="42" height="21"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="2" translatesAutoresizingMaskIntoConstraints="NO" id="rJW-40-lbA">
+                                        <rect key="frame" x="0.0" y="31" width="162" height="21"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Tipo de Masa :" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Mpd-a1-qhU">
+                                                <rect key="frame" x="0.0" y="0.0" width="118" height="21"/>
+                                                <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pC9-wq-RA8">
+                                                <rect key="frame" x="120" y="0.0" width="42" height="21"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="oxM-Ji-Vqs">
+                                        <rect key="frame" x="0.0" y="61" width="169" height="21"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Tipo de Queso :" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Kj7-fc-O0o">
+                                                <rect key="frame" x="0.0" y="0.0" width="127" height="21"/>
+                                                <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VJZ-jL-RRs">
+                                                <rect key="frame" x="127" y="0.0" width="42" height="21"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="qci-Em-0H4">
+                                        <rect key="frame" x="0.0" y="92" width="226" height="21"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Ingredientes :" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Kbk-7J-jSl">
+                                                <rect key="frame" x="0.0" y="0.0" width="113" height="21"/>
+                                                <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YLC-x2-WBi">
+                                                <rect key="frame" x="113" y="0.0" width="113" height="21"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                            </stackView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zqB-f9-1V7">
+                                <rect key="frame" x="0.0" y="0.0" width="115" height="30"/>
+                                <state key="normal" title="Confirmar Orden"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="A4C-w0-LmZ">
+                                <rect key="frame" x="243" y="465" width="115" height="30"/>
+                                <state key="normal" title="Confirmar Orden"/>
+                                <connections>
+                                    <segue destination="OBj-th-Zet" kind="presentation" id="giu-bo-xhY"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="LOq-1n-LK5" firstAttribute="centerY" secondItem="ohc-0I-9cd" secondAttribute="centerY" id="B0w-Sw-YUu"/>
+                            <constraint firstItem="A4C-w0-LmZ" firstAttribute="centerX" secondItem="ohc-0I-9cd" secondAttribute="centerX" id="Ml1-T8-iab"/>
+                            <constraint firstItem="okF-HN-OY6" firstAttribute="top" secondItem="A4C-w0-LmZ" secondAttribute="bottom" constant="105" id="MvU-bo-beG"/>
+                            <constraint firstItem="LOq-1n-LK5" firstAttribute="centerX" secondItem="ohc-0I-9cd" secondAttribute="centerX" id="ku8-6Y-HZZ"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="ingredientesLbl" destination="YLC-x2-WBi" id="RUc-da-yZ5"/>
+                        <outlet property="tamanoLbl" destination="98X-r2-lqe" id="w0w-pd-gIl"/>
+                        <outlet property="tipoMasaLbl" destination="pC9-wq-RA8" id="Nxd-uP-Idc"/>
+                        <outlet property="tipoQuesoLbl" destination="VJZ-jL-RRs" id="XQt-Nd-5J9"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ubm-eS-qfb" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3836" y="665"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="iUn-hY-58q">
+            <objects>
+                <viewController id="OBj-th-Zet" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="QRD-6u-AAg"/>
+                        <viewControllerLayoutGuide type="bottom" id="G35-yF-o4F"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="ms4-d0-MaR">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Gracias. La orden ha sido confirmada." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7kj-If-1si">
+                                <rect key="frame" x="145.5" y="290" width="309" height="20.5"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="7kj-If-1si" firstAttribute="centerX" secondItem="ms4-d0-MaR" secondAttribute="centerX" id="KGc-RB-hFv"/>
+                            <constraint firstItem="7kj-If-1si" firstAttribute="centerY" secondItem="ms4-d0-MaR" secondAttribute="centerY" id="ol1-OE-hX2"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="GMz-EF-8wb" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="4491" y="665"/>
+        </scene>
+        <!--Tipo Queso View Controller-->
+        <scene sceneID="SSQ-7G-exi">
+            <objects>
+                <viewController id="Mcf-H2-0MF" customClass="TipoQuesoViewController" customModule="PizzaApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="wKv-rS-Qhp"/>
+                        <viewControllerLayoutGuide type="bottom" id="4Af-eB-RTP"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="vAP-ia-mob">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Seleccione el Tipo de Queso" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eJf-tR-5ua">
+                                <rect key="frame" x="191.5" y="120" width="217.5" height="20.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <pickerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Ekc-n3-Y25">
+                                <rect key="frame" x="140" y="192" width="320" height="216"/>
+                            </pickerView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AWh-iU-ju8">
+                                <rect key="frame" x="206" y="449" width="188" height="30"/>
+                                <state key="normal" title="Seleccione los ingredientes"/>
+                                <connections>
+                                    <action selector="quesoSeleccionado:" destination="Mcf-H2-0MF" eventType="touchUpInside" id="FYw-ju-1yn"/>
+                                    <segue destination="sTc-Dp-HBm" kind="show" id="Dto-ok-gdM"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="eJf-tR-5ua" firstAttribute="centerX" secondItem="vAP-ia-mob" secondAttribute="centerX" id="6bE-PS-beV"/>
+                            <constraint firstItem="Ekc-n3-Y25" firstAttribute="centerX" secondItem="vAP-ia-mob" secondAttribute="centerX" id="7fN-RK-COC"/>
+                            <constraint firstItem="Ekc-n3-Y25" firstAttribute="centerY" secondItem="vAP-ia-mob" secondAttribute="centerY" id="B1A-4Y-iFE"/>
+                            <constraint firstItem="eJf-tR-5ua" firstAttribute="top" secondItem="wKv-rS-Qhp" secondAttribute="bottom" constant="56" id="LHv-1g-TQr"/>
+                            <constraint firstItem="4Af-eB-RTP" firstAttribute="top" secondItem="AWh-iU-ju8" secondAttribute="bottom" constant="121" id="qhU-Ct-BsR"/>
+                            <constraint firstItem="AWh-iU-ju8" firstAttribute="centerX" secondItem="vAP-ia-mob" secondAttribute="centerX" id="wAZ-mO-hJ2"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="tipoQuesoPicker" destination="Ekc-n3-Y25" id="9Gv-b0-EBF"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="uzS-Ar-kwd" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2487" y="644"/>
+        </scene>
+        <!--Ingredientes View Controller-->
+        <scene sceneID="j5a-vq-K2m">
+            <objects>
+                <viewController id="sTc-Dp-HBm" customClass="IngredientesViewController" customModule="PizzaApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Xwc-Gw-dQF"/>
+                        <viewControllerLayoutGuide type="bottom" id="KsU-zB-EX8"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="KMo-eE-ePB">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Selecciones los Ingredientes" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UmT-yF-v3F">
+                                <rect key="frame" x="191" y="119.5" width="218" height="20.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="rhI-AQ-adf">
+                                <rect key="frame" x="240" y="160" width="121" height="382"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="nV3-xo-ChJ">
+                                        <rect key="frame" x="0.0" y="0.0" width="95" height="38"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VXU-Rf-iVq" customClass="CheckBox" customModule="PizzaApp" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="0.0" width="38" height="38"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="38" id="W31-x7-qeP"/>
+                                                    <constraint firstAttribute="height" constant="38" id="x4D-Ag-EPC"/>
+                                                </constraints>
+                                                <state key="normal" title="Button" image="UnChecked"/>
+                                                <connections>
+                                                    <action selector="ingredienteSeleccionado:" destination="sTc-Dp-HBm" eventType="touchUpInside" id="D9i-ql-zsG"/>
+                                                </connections>
+                                            </button>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Jamón" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XLN-pf-Pif">
+                                                <rect key="frame" x="43" y="0.0" width="52" height="38"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="BME-0O-ulI">
+                                        <rect key="frame" x="0.0" y="43" width="121" height="38"/>
+                                        <subviews>
+                                            <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hei-rH-1lm" customClass="CheckBox" customModule="PizzaApp" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="0.0" width="38" height="38"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="38" id="cJ6-iZ-ntV"/>
+                                                    <constraint firstAttribute="height" constant="38" id="iTl-aF-2qz"/>
+                                                </constraints>
+                                                <state key="normal" title="Button" image="UnChecked"/>
+                                                <connections>
+                                                    <action selector="ingredienteSeleccionado:" destination="sTc-Dp-HBm" eventType="touchUpInside" id="6Me-nP-Hts"/>
+                                                </connections>
+                                            </button>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Pepperoni" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EDf-Zu-nst">
+                                                <rect key="frame" x="43" y="0.0" width="78" height="38"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="iIM-Dp-BDM">
+                                        <rect key="frame" x="0.0" y="86" width="80" height="38"/>
+                                        <subviews>
+                                            <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ah1-Vl-TU0" customClass="CheckBox" customModule="PizzaApp" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="0.0" width="38" height="38"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="38" id="d9d-96-cGa"/>
+                                                    <constraint firstAttribute="width" constant="38" id="zip-bN-S3G"/>
+                                                </constraints>
+                                                <state key="normal" title="Button" image="UnChecked"/>
+                                                <connections>
+                                                    <action selector="ingredienteSeleccionado:" destination="sTc-Dp-HBm" eventType="touchUpInside" id="jTB-0g-YNY"/>
+                                                </connections>
+                                            </button>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Pavo" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9pM-Gt-dmK">
+                                                <rect key="frame" x="43" y="0.0" width="37" height="38"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="Eh2-ye-I8Q">
+                                        <rect key="frame" x="0.0" y="129" width="117" height="38"/>
+                                        <subviews>
+                                            <button opaque="NO" tag="3" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dSi-L2-RNQ" customClass="CheckBox" customModule="PizzaApp" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="0.0" width="38" height="38"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="38" id="4Gb-Cr-lWh"/>
+                                                    <constraint firstAttribute="height" constant="38" id="POO-fK-FrJ"/>
+                                                </constraints>
+                                                <state key="normal" title="Button" image="UnChecked"/>
+                                                <connections>
+                                                    <action selector="ingredienteSeleccionado:" destination="sTc-Dp-HBm" eventType="touchUpInside" id="sQT-SM-pqX"/>
+                                                </connections>
+                                            </button>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Salchicha" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Hhc-6C-wyd">
+                                                <rect key="frame" x="43" y="0.0" width="74" height="38"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="cAM-ga-IhV">
+                                        <rect key="frame" x="0.0" y="172" width="110" height="38"/>
+                                        <subviews>
+                                            <button opaque="NO" tag="4" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="T29-UI-8qp" customClass="CheckBox" customModule="PizzaApp" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="0.0" width="38" height="38"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="38" id="RDO-Eh-Rvy"/>
+                                                    <constraint firstAttribute="height" constant="38" id="dwR-GR-61d"/>
+                                                </constraints>
+                                                <state key="normal" title="Button" image="UnChecked"/>
+                                            </button>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Aceituna" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tOX-Dh-Oia">
+                                                <rect key="frame" x="43" y="0.0" width="67" height="38"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="Ipk-Dg-UqX">
+                                        <rect key="frame" x="0.0" y="215" width="101" height="38"/>
+                                        <subviews>
+                                            <button opaque="NO" tag="5" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Mcq-QP-JzN" customClass="CheckBox" customModule="PizzaApp" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="0.0" width="38" height="38"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="38" id="9KG-Gn-vXW"/>
+                                                    <constraint firstAttribute="width" constant="38" id="hFv-es-9Nm"/>
+                                                </constraints>
+                                                <state key="normal" title="Button" image="UnChecked"/>
+                                                <connections>
+                                                    <action selector="ingredienteSeleccionado:" destination="sTc-Dp-HBm" eventType="touchUpInside" id="ryO-wu-38E"/>
+                                                </connections>
+                                            </button>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Cebolla" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zaS-TL-V5h">
+                                                <rect key="frame" x="43" y="0.0" width="58" height="38"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="TRU-0m-wuQ">
+                                        <rect key="frame" x="0.0" y="258" width="110" height="38"/>
+                                        <subviews>
+                                            <button opaque="NO" tag="6" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IAJ-WH-kB7" customClass="CheckBox" customModule="PizzaApp" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="0.0" width="38" height="38"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="38" id="NAA-u5-xNO"/>
+                                                    <constraint firstAttribute="height" constant="38" id="ir4-Ig-J3V"/>
+                                                </constraints>
+                                                <state key="normal" title="Button" image="UnChecked"/>
+                                                <connections>
+                                                    <action selector="ingredienteSeleccionado:" destination="sTc-Dp-HBm" eventType="touchUpInside" id="M5T-VL-bmO"/>
+                                                </connections>
+                                            </button>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Pimiento" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9KF-4d-ujR">
+                                                <rect key="frame" x="43" y="0.0" width="67" height="38"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="4Wz-df-flT">
+                                        <rect key="frame" x="0.0" y="301" width="76" height="38"/>
+                                        <subviews>
+                                            <button opaque="NO" tag="7" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cPv-Yd-tTA" customClass="CheckBox" customModule="PizzaApp" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="0.0" width="38" height="38"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="38" id="3MZ-Pb-89f"/>
+                                                    <constraint firstAttribute="width" constant="38" id="lId-QO-iN7"/>
+                                                </constraints>
+                                                <state key="normal" title="Button" image="UnChecked"/>
+                                                <connections>
+                                                    <action selector="ingredienteSeleccionado:" destination="sTc-Dp-HBm" eventType="touchUpInside" id="Y8F-Lz-Vzj"/>
+                                                </connections>
+                                            </button>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Piña" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="msk-Rf-0Qd">
+                                                <rect key="frame" x="43" y="0.0" width="33" height="38"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="NHe-AG-map">
+                                        <rect key="frame" x="0.0" y="344" width="110" height="38"/>
+                                        <subviews>
+                                            <button opaque="NO" tag="8" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0uB-ky-7Xo" customClass="CheckBox" customModule="PizzaApp" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="0.0" width="38" height="38"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="38" id="6dO-tw-Lxo"/>
+                                                    <constraint firstAttribute="height" constant="38" id="Xdd-oe-Ucv"/>
+                                                </constraints>
+                                                <state key="normal" title="Button" image="UnChecked"/>
+                                                <connections>
+                                                    <action selector="ingredienteSeleccionado:" destination="sTc-Dp-HBm" eventType="touchUpInside" id="zfB-Gz-bSB"/>
+                                                </connections>
+                                            </button>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Anchoas" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2BB-V3-Zh3">
+                                                <rect key="frame" x="43" y="0.0" width="67" height="38"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                            </stackView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0Gy-br-VPs">
+                                <rect key="frame" x="229" y="562" width="143" height="30"/>
+                                <state key="normal" title="Ver Orden Clompleta"/>
+                                <connections>
+                                    <action selector="validarCandidadIngredientes:" destination="sTc-Dp-HBm" eventType="touchUpInside" id="lsJ-FS-nhp"/>
+                                    <segue destination="hrX-vP-urM" kind="show" identifier="goToConfirmacion" id="K1j-dx-czA"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="rhI-AQ-adf" firstAttribute="top" secondItem="UmT-yF-v3F" secondAttribute="bottom" constant="20" id="Iby-2I-aGN"/>
+                            <constraint firstItem="0Gy-br-VPs" firstAttribute="centerX" secondItem="KMo-eE-ePB" secondAttribute="centerX" id="Si4-1Z-oI8"/>
+                            <constraint firstItem="UmT-yF-v3F" firstAttribute="top" secondItem="Xwc-Gw-dQF" secondAttribute="bottom" constant="56" id="V9U-5O-crH"/>
+                            <constraint firstItem="rhI-AQ-adf" firstAttribute="centerX" secondItem="KMo-eE-ePB" secondAttribute="centerX" id="Yh2-7I-5fU"/>
+                            <constraint firstItem="UmT-yF-v3F" firstAttribute="centerX" secondItem="KMo-eE-ePB" secondAttribute="centerX" id="ek8-Sb-81Z"/>
+                            <constraint firstItem="KsU-zB-EX8" firstAttribute="top" secondItem="0Gy-br-VPs" secondAttribute="bottom" constant="8" id="kRC-BU-7V8"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="FAi-AH-41w" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3165" y="644"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="aMX-77-tHA">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="KZN-33-5QR" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="m8r-I8-44B">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="vIE-2y-I9O" kind="relationship" relationship="rootViewController" id="rf5-fW-WMi"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="VLW-0I-PGa" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="951" y="220"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="UnChecked" width="128" height="128"/>
+    </resources>
+</document>
